@@ -1,13 +1,14 @@
-import HeroesList from "./heroes-list";
+import HeroList from './heroes-list';
+import './app.css';
 
-function App() {
-
+const App = () => {
   return (
     <div>
       <h1>App</h1>
-      <HeroesList />
+      <h2>Heroes</h2>
+      <HeroList />
     </div>
   );
-}
+};
 
 export default App;

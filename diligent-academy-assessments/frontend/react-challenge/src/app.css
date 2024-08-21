@@ -1,0 +1,55 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  h1, h2 {
+    text-align: left;
+    margin-left: 120px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Hero List Styles */
+  .hero-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 120px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.hero-list-item {
+    color: red;
+    cursor: pointer;
+    font-size: 1.5rem;
+    box-sizing: border-box; 
+    padding: 10px; 
+}
+  
+  .hero-list-item.available {
+    color: green;
+  }
+  
+  .hero-list-item:hover {
+    text-decoration: underline;
+  }
+  
+  /* Loading and Error Messages */
+  .message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
