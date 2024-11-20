@@ -50,11 +50,11 @@ export interface paths {
         get?: never;
         put?: never;
         post?: never;
-        delete?: never;
+        /** Soft delete a board by ID */
+        delete: operations["deleteBoard"];
         options?: never;
         head?: never;
-        /** Soft delete a board by ID */
-        patch: operations["deleteBoard"];
+        patch?: never;
         trace?: never;
     };
 }
