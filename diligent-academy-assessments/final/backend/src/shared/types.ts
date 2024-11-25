@@ -1,4 +1,5 @@
 import { BoardName } from "../domain/value-object/board-name";
+import { StatusName } from "../domain/value-object/status-name";
 
 export type CreateBoardProperties = {
   name: BoardName;
@@ -6,7 +7,7 @@ export type CreateBoardProperties = {
 };
 
 export type CreateStatusProperties = {
-  name: string;
+  name: StatusName;
   position: number;
   boardId: string;
 }
