@@ -28,10 +28,12 @@ export function useHeroes() {
   }, []);
 
   const toggleAvailability = (id: number) => {
-    setHeroes((prevHeroes) =>
+    setHeroes(/* (prevHeroes) =>
       prevHeroes.map((hero) =>
         hero.id === id ? { ...hero, available: !hero.available } : hero
-      )
+      ) */
+      heroes.map((hero) =>
+        hero.id === id ? { ...hero, available: !hero.available } : hero )
     );
   };
 
